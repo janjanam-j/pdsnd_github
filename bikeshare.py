@@ -227,9 +227,10 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
 
-        rawdata_view = input('\nWould you like to see the first 5 lines of raw data? Enter yes or no.\n')
+        rawdata_view = input('\nWould you like to see the first 10 lines of raw data? Enter yes or no.\n')
         if rawdata_view.lower() == 'yes':
-            print(df.head())
+            print(df.head(10))
+            print(df.)
             print()
         else:
             restart = input('\nWould you like to restart? Enter yes or no.\n')
