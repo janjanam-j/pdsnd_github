@@ -26,9 +26,7 @@ def get_filters():
         if city not in ('chicago', 'new york city', 'washington'):
             print(" enter valid city name: 'chicago' or 'new york city' or 'washington' ")
             continue
-#        except ValueError:
-#            print("Sorry, I didn't understand that.")
-#            continue
+
         else:
             break
 
