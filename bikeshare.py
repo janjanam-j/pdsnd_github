@@ -213,6 +213,7 @@ def user_stats(df):
         print("The earlist year of birth is {} \n Most recent year of birth is {} \n Most common year of birth {}".format(int(yob_earliest), int(yob_recent), int(yob_common)))
     except KeyError:
         print("No information on users' birth year available from the Washington bikeshare data")
+        print("Try with chicago or new york city bikeshare data to see Birth year data")
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
