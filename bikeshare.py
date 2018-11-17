@@ -26,9 +26,7 @@ def get_filters():
         if city not in ('chicago', 'new york city', 'washington'):
             print(" enter valid city name: 'chicago' or 'new york city' or 'washington' ")
             continue
-#        except ValueError:
-#            print("Sorry, I didn't understand that.")
-#            continue
+
         else:
             break
 
@@ -215,6 +213,7 @@ def user_stats(df):
         print("The earlist year of birth is {} \n Most recent year of birth is {} \n Most common year of birth {}".format(int(yob_earliest), int(yob_recent), int(yob_common)))
     except KeyError:
         print("No information on users' birth year available from the Washington bikeshare data")
+        print("Try with chicago or new york city bikeshare data to see Birth year data")
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -229,9 +228,10 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
 
-        rawdata_view = input('\nWould you like to see the first 5 lines of raw data? Enter yes or no.\n')
+        rawdata_view = input('\nWould you like to see the first 10 lines of raw data? Enter yes or no.\n')
         if rawdata_view.lower() == 'yes':
-            print(df.head())
+            print(df.head(10))
+            print(df.)
             print()
         else:
             restart = input('\nWould you like to restart? Enter yes or no.\n')
