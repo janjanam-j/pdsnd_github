@@ -15,3 +15,13 @@ washington.csv
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+
+https://www.atlassian.com/git/tutorials/using-branches
+
+https://learngitbranching.js.org
+
+https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
+
+http://up-for-grabs.net/
+
+http://www.firsttimersonly.com/
