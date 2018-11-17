@@ -5,7 +5,7 @@ November 16, 2018
 Bikeshare Python Project
 
 ### Description
-Describe what your project is about and what it does
+Use Python pandas to understand U.S. bikeshare data
 
 ### Files used
 Include the files used
